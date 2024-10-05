@@ -8,8 +8,23 @@ The first character indicates the type of input.
 
 *-rwxrwxrwx*
 
+You can use the chown command to change the ownership of a file. The chown command is abbreviated from "change owner". 
+
+chown <user_name> <file_name>
+
+chown --reference=<source_file_name> <destination_file_name>
+
+sudo chown <user_name> file1 file2 ...
+
+To change group ownership
+
+sudo chgrp <group_name> <file/dir_name>
+
 chmod <user><group><others> <file_name>
 
+sudo chgrp admin group_test/
+
+sudo chgrp -R admin group_test/
 chmod +r <filename>
 
 chmod +w <filename>
