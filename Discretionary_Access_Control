@@ -1,1 +1,16 @@
 
+chmod <user><group><others> <file_name>
+
+chmod +r <filename>
+
+chmod +w <filename>
+
+chmod +x <filename>
+
+chmod -r <filename>
+
+chmod -rwx <filename>
+
+Add or Remove permissions recursively to all sub-directories
+
+sudo chmod -R <permission> <filename>
