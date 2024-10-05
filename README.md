@@ -15,6 +15,7 @@ Stack Protection:
 Fortify Source:
 
   -D_FORTIFY_SOURCE=2: Adds checks for buffer overflows in functions like sprintf and strcpy1.
+
   
 Position Independent Executable (PIE):
 
@@ -23,6 +24,8 @@ Position Independent Executable (PIE):
 Control Flow Integrity (CFI):
 
   -fcf-protection: Adds control flow integrity checks to prevent certain types of attacks1.
+  
+  This helps prevent certain types of attacks, such as return-oriented programming (ROP) and jump-oriented programming (JOP), which exploit vulnerabilities in the control flow of a program
   
 Stack Clash Protection:
 
