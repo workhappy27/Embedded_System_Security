@@ -8,6 +8,18 @@ The first character indicates the type of input.
 
 *-rwxrwxrwx*
 
+useradd [OPTIONS] <user_name>
+
+groupadd [OPTIONS] <group_name>
+
+Add user to the group
+
+sudo usermod -aG <group_name> <user_name>
+
+List groups in a system
+
+cat /etc/group
+
 You can use the chown command to change the ownership of a file. The chown command is abbreviated from "change owner". 
 
 chown <user_name> <file_name>
