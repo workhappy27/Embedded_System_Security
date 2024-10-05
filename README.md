@@ -5,10 +5,15 @@ Embedded System Secuirty
 GCC offers several security features that you can enable to enhance the security of your compiled programs. Here are some key options:
 
 Stack Protection:
+
   -fstack-protector: Adds checks to detect stack buffer overflows.
+  
   -fstack-protector-strong: Protects more functions, including those with local variables that have their addresses taken.
+  
   -fstack-protector-all: Protects all functions1.
+
 Fortify Source:
+
   -D_FORTIFY_SOURCE=2: Adds checks for buffer overflows in functions like sprintf and strcpy1.
 Position Independent Executable (PIE):
   -fPIE and -pie: Generates position-independent code, which is useful for Address Space Layout Randomization (ASLR)1.
