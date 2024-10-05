@@ -15,6 +15,7 @@ Stack Protection:
 Fortify Source:
 
   -D_FORTIFY_SOURCE=2: Adds checks for buffer overflows in functions like sprintf and strcpy1.
+  The compiler replaces standard functions like memcpy, strcpy, sprintf, and others with safer versions that include runtime checks. These checks help detect buffer overflows and other memory-related errors
 
   
 Position Independent Executable (PIE):
