@@ -1,3 +1,12 @@
+The first character indicates the type of input.
+
+    "-" indicates a file
+
+    "d" indicates a directory
+
+    "i" indicates a link (a symlink, which is a shortcut to a file/directory)
+
+*-rwxrwxrwx*
 
 chmod <user><group><others> <file_name>
 
@@ -14,3 +23,5 @@ chmod -rwx <filename>
 Add or Remove permissions recursively to all sub-directories
 
 sudo chmod -R <permission> <filename>
+
+chmod u+rwx,go+r <filename>
