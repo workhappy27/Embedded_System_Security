@@ -79,4 +79,8 @@ Thin Pointers: These are traditional pointers that only store the memory address
 
 Fat Pointers: These store additional metadata, making them larger but more versatile for handling dynamic data structures.
 
+Compiler Warnings: Enable compiler warnings to catch potential format string vulnerabilities during development.
+
+gcc -Wall -Wformat-security -o my_program my_program.c
+
 
