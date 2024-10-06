@@ -34,6 +34,20 @@ sudo chgrp <group_name> <file/dir_name>
 
 chmod <user><group><others> <file_name>
 
+To change both the owner and the group of a file use the chown command followed by the new owner and group separated by a colon (:)
+
+with no intervening spaces and the target file.
+
+chown USER:GROUP FILE
+
+The following command will change the ownership of a file named file1 to a new owner named linuxize and group users:
+
+chown linuxize:users file1
+
+If you omit the group name after the colon (:), the group of the file is changed to the specified user’s login group:
+
+chown linuxize: file1
+
 sudo chgrp admin group_test/
 
 sudo chgrp -R admin group_test/
