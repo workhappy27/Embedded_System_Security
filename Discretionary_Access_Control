@@ -66,3 +66,59 @@ Add or Remove permissions recursively to all sub-directories
 sudo chmod -R <permission> <filename>
 
 chmod u+rwx,go+r <filename>
+
+What is an ACL?
+An access control list (ACL) lets you assign permissions for each unique user or group. Suppose you have user1, user2, and user3 on a system.
+
+Users user2 and user3 are part of a demo group. You must assign this permission scheme to the sample directory:
+
+user1: read and write permission
+
+user2: read permission
+
+You can use the setfacl and getfacl command utilities to assign and verify the ACL of a file or directory. To set an ACL, use the setfacl command with the --modify (-m for short) option:
+
+$ setfacl --modify user1:rw sample
+
+$ setfactl –modify user2:r sample
+
+setfacl -m u:user1:rw \
+
+-m u:user2:r \
+
+-m u:user3:rwx \
+
+-m g:demo1:rw \
+
+-m g:demo2:rwx \
+
+-m o:r sample
+
+
+View the ACLs using the getfacl command:
+
+$ getfacl sample
+
+# file: sample
+
+# owner: tux
+
+# group: tux
+
+user::rwx
+
+user:user1:rw-
+
+user:user2:r--
+
+user:user3:rwx
+
+group::r-x
+
+group:demo1:rw-
+
+group:demo2:rwx
+
+mask::rwx
+
+other::r--
