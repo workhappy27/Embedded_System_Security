@@ -1,6 +1,9 @@
-In ARM architecture, Exception Levels (EL) define different levels of privilege for code execution. There are four exception levels, from EL0 to EL3, with EL0 being the least privileged and EL3 the most privileged.
+In ARM architecture, Exception Levels (EL) define different levels of privilege for code execution.
+There are four exception levels, from EL0 to EL3, with EL0 being the least privileged and EL3 the most privileged.
 
-Exception Level 1 (EL1) is typically used for operating system kernels and associated functions. It is a privileged level, meaning it has more access rights compared to user applications running at EL0. At EL1, the operating system can manage hardware resources, handle interrupts, and perform other critical tasks1.
+Exception Level 1 (EL1) is typically used for operating system kernels and associated functions.
+It is a privileged level, meaning it has more access rights compared to user applications running at EL0.
+At EL1, the operating system can manage hardware resources, handle interrupts, and perform other critical tasks1.
 
 Here's a brief overview of the exception levels:
 
